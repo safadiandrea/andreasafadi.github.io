@@ -7,6 +7,7 @@
 In order to report a security vulnerability, please send a **private report** at **[safadiandrea@gmail.com]** 
 
 **What to Include?**
+
 When reporting, please be sure to include the following information on the report:
 - A detailed description of the issue and how it occurred
 - Information about any affected versions or components of the software
