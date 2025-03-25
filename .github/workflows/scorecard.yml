@@ -15,10 +15,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
       - name: Download and install OpenSSF Scorecard
         run: |
           VERSION=$(curl --silent "https://api.github.com/repos/ossf/scorecard/releases/latest" | jq -r .tag_name)
-          curl -LO "https://github.com/ossf/scorecard/releases/download/$VERSION/scorecard-linux-amd64-$VERSION.tar.gz"
+          echo "Latest version: $VERSION"
+          DOWNLOAD_URL="https://github.com/ossf/scorecard/releases/download/$VERSION/scorecard-linux-amd64-$VERSION.tar.gz"
+          curl -LO $DOWNLOAD_URL
           tar -xvf "scorecard-linux-amd64-$VERSION.tar.gz"
           chmod +x scorecard
           sudo mv scorecard /usr/local/bin/
