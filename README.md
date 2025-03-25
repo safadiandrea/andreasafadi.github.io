@@ -8,7 +8,7 @@ In particular, this code entails to deliver an experience reminiscent of a popul
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10303/badge)](https://www.bestpractices.dev/projects/10303)
 
 
-## How to Obtain the .py File
+## How to Obtain Project File
 
 Clone the repository:
 git clone https://github.com/safadiandrea/andreasafadi.github.io
