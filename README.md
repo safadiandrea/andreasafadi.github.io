@@ -8,16 +8,18 @@ In particular, this code entails to deliver an experience reminiscent of a popul
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10303/badge)](https://www.bestpractices.dev/projects/10303)
 
 
-## How to Obtain Project File
+## Contributions and Feedback
+
+**How to Obtain Project File**
 
 Clone the repository:
 git clone https://github.com/safadiandrea/andreasafadi.github.io
 
-## Report an Issue 
+**Reporting an Issue** 
 
 Bugs and other software issues can be reported on the Issues tab of this github repository. 
 
-## Contributions
+**Contributions**
 
 If you wish to help out with the development of this project, please be sure to submit a pull request 
 
