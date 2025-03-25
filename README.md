@@ -13,3 +13,7 @@ In particular, this code entails to deliver an experience reminiscent of a popul
 Clone the repository:
 git clone https://github.com/safadiandrea/andreasafadi.github.io
 
+## Report an Issue 
+
+Bugs and other software issues can be reported on the Issues tab of this github repository. 
+
