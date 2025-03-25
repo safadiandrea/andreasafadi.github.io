@@ -1,4 +1,8 @@
-# Welcome to my Website!
+# - Integration Project -
+
+**Description:** This project entails to show best coding practices and skills learned from the course COP 1500.
+In particular, this code entails to deliver an experience reminiscent of a popular horror web-series with interactive elements. 
+Please enjoy. 
 
 **Code Badges:**
 
