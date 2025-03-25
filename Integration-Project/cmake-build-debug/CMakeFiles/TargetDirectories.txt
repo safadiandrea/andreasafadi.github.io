@@ -1,0 +1,3 @@
+C:/Users/safad/Documents/GitHub/Integration-Project/cmake-build-debug/CMakeFiles/Integration_Project.dir
+C:/Users/safad/Documents/GitHub/Integration-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/safad/Documents/GitHub/Integration-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
