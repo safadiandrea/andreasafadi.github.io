@@ -17,3 +17,7 @@ git clone https://github.com/safadiandrea/andreasafadi.github.io
 
 Bugs and other software issues can be reported on the Issues tab of this github repository. 
 
+## Contributions
+
+If you wish to help out with the development of this project, please be sure to submit a pull request 
+
