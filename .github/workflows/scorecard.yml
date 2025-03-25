@@ -15,14 +15,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: '1.17'  # You can adjust the version of Go as needed
-
-      - name: Install OpenSSF Scorecard
+      - name: Download and install OpenSSF Scorecard
         run: |
-          go install github.com/ossf/scorecard/cmd/scorecard@latest
+          VERSION=$(curl --silent "https://api.github.com/repos/ossf/scorecard/releases/latest" | jq -r .tag_name)
+          curl -LO "https://github.com/ossf/scorecard/releases/download/$VERSION/scorecard-linux-amd64-$VERSION.tar.gz"
+          tar -xvf "scorecard-linux-amd64-$VERSION.tar.gz"
+          chmod +x scorecard
+          sudo mv scorecard /usr/local/bin/
 
       - name: Run OpenSSF Scorecard
         run: |
