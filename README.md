@@ -25,3 +25,9 @@ Bugs and other software issues can be reported on the Issues tab of this github 
 
 If you wish to help out with the development of this project, please be sure to submit a pull request 
 
+_Coding Standards_
+
+PEP 8 (Python coding standard)
+- please refer to https://peps.python.org/pep-0008/ for further detail on how to contribute in accordance with the PEP 8 standard
+  
+
