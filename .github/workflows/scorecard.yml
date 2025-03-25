@@ -2,39 +2,33 @@
 # by a third-party and are governed by separate terms of service, privacy
 # policy, and support documentation.
 
-name: Scorecard supply-chain security
+name: OpenSSF Scorecard
 on:
-  # For Branch-Protection check. Only the default branch is supported. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
-  branch_protection_rule:
-  # To guarantee Maintained check is occasionally updated. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
-  schedule:
-    - cron: '23 22 * * 2'
   push:
     branches: [ "main" ]
-
-# Declare default permissions as read only.
-permissions: read-all
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  analysis:
-    name: Scorecard analysis
-    runs-on: ubuntu-latest
-    permissions:
-      # Needed to upload the results to code-scanning dashboard.
-      security-events: write
-      # Needed to publish results and get a badge (see publish_results below).
-      id-token: write
-      # Uncomment the permissions below if installing in a private repository.
-      # contents: read
-      # actions: read
+  scorecard: 
+  runs-on: ubuntu-latest
+  steps:
+    name: Checkout code
+    uses: actions/checkout@v2
+
+    name: Install OpenSSF Scorecard
+    run: 
+      go install github.com/ossf/scorecard/cmd/scorecard@latest
+
+    name: Run OpenSSF Scorecard
+    run:
+      scorecard https://github.com/${{andreasafadi.github.io}}
 
     steps:
       - name: "Checkout code"
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          persist-credentials: false
+          go-version: '1.17'
 
       - name: "Run analysis"
         uses: ossf/scorecard-action@0864cf19026789058feabb7e87baa5f140aac736 # v2.3.1
