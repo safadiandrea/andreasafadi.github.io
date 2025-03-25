@@ -4,7 +4,9 @@
 In particular, this code entails to deliver an experience reminiscent of a popular horror web-series with text-based interactive elements. 
 
 **Badges:**
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10303/badge)](https://www.bestpractices.dev/projects/10303)
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/{owner}/{repo}/badge)](https://scorecard.dev/viewer/?uri=github.com/safadiandrea/andreasafadi.github.io)
 
 ## Contributions and Feedback
 
