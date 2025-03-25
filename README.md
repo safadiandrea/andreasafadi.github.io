@@ -11,6 +11,5 @@ In particular, this code entails to deliver an experience reminiscent of a popul
 ## How to Obtain the .py File
 
 Clone the repository:
-'''bash
 git clone https://github.com/safadiandrea/andreasafadi.github.io
 
