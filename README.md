@@ -7,7 +7,7 @@ In particular, this code entails to deliver an experience reminiscent of a popul
 
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10303/badge)](https://www.bestpractices.dev/projects/10303)
 
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/{owner}/{repo}/badge)](https://scorecard.dev/viewer/?uri=github.com/safadiandrea/andreasafadi.github.io)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/safadiandrea/andreasafadi.github.io/badge)](https://scorecard.dev/viewer/?uri=github.com/safadiandrea/andreasafadi.github.io)
 
 ## Contributions and Feedback
 
